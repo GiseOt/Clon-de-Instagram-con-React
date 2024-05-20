@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ header{
+    padding-block: 15px;
+    display: flex;
+    justify-content: star;
+    gap: 15px;
+    width:333px ;
+    overflow-x: auto;
+    margin: 20px auto;
+   padding-inline-start: 5px;
+ }
+@media screen and (min-width: 970px) {
+  header{
+     width:450px ;
+  } 
+  }
+
+  /* Estilos para el contenedor con desplazamiento */
+header::-webkit-scrollbar {
+  width: 1px; 
+}
+
+header::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+/* Estilos para el indicador de desplazamiento */
+header::-webkit-scrollbar-thumb {
+  background-color: rgba(234, 195, 245, 0.3); 
+  border-radius: 10px; 
+}
+
+/* Estilos para las flechas de desplazamiento */
+header::-webkit-scrollbar-button {
+  display: none;
+}

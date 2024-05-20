@@ -1,0 +1,84 @@
+.div__cardFeed {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 100vh; 
+  margin-bottom: -100px;
+}
+
+@media screen and (max-width: 600px) {
+  .div__cardFeed {
+    height: auto; 
+    margin-bottom: 0; 
+    padding: 20px; 
+  }}
+  
+.card__feed {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.feed__imagen {
+  width: 450px;
+  height: 600px;
+  object-fit: cover;
+
+}
+@media screen and (max-width: 600px) {
+  .feed__imagen {
+    width: 100%; 
+    height: auto; 
+  }
+}
+
+.div__feed {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap:12px
+ 
+}
+
+.div__feed img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+ /*  box-shadow: 0 0 0 2px inset, 0 0 0 3px rgb(188, 63, 251); */
+}
+@media screen and (max-width: 600px) {
+ 
+  .div__feed img {
+    width: 30px; 
+    height: 30px; 
+  }
+}
+
+.tiempoPublicado{
+    color: darkgrey;
+}
+
+.feed__reacciones{
+    display: flex;
+   justify-content: space-between;
+   margin-block: 10px;
+   font-size: 20px;
+ 
+}
+.iconos__div{
+  display: flex;
+  gap: 8px;
+}
+
+.usuario__bold{
+    font-weight: bold;
+}
+
+.recuentos__meGusta{
+    display: flex;
+    gap:5px;
+    margin-bottom: 5px;
+}
+
+
