@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Lobster&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
  header{
     padding-block: 15px;
@@ -19,7 +21,7 @@
   } 
   }
 
-  /* Estilos para el contenedor con desplazamiento */
+  /* Estilos scroll*/
 header::-webkit-scrollbar {
   width: 1px; 
 }
@@ -28,13 +30,12 @@ header::-webkit-scrollbar-track {
   background: transparent; 
 }
 
-/* Estilos para el indicador de desplazamiento */
 header::-webkit-scrollbar-thumb {
   background-color: rgba(234, 195, 245, 0.3); 
   border-radius: 10px; 
 }
 
-/* Estilos para las flechas de desplazamiento */
+
 header::-webkit-scrollbar-button {
   display: none;
 }

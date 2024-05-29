@@ -1,6 +1,7 @@
 import CardHistorias from "./CardHistorias";
 import Historias from "./Historias";
 import CardFeed from "./CardFeed";
+import Navbar from "./Navbar";
 
 //Css
 import "./App.css";
@@ -19,9 +20,10 @@ import feed3 from "./assets/feed3.jpg";
 import feed4 from "./assets/feed4.jpg";
 import feed5 from "./assets/feed5.jpg";
 
-function App() {
+function App({ setEstaLogueado , usuario}) {
 	return (
 		<>
+			<Navbar usuario={usuario} setEstaLogueado={setEstaLogueado}/>
 			<Historias>
 				<CardHistorias usuario="Yayita_lp" imagenHistoria={historia1} />
 				<CardHistorias usuario="Maria84" imagenHistoria={historia2} />

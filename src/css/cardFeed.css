@@ -1,83 +1,83 @@
 .div__cardFeed {
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  height: 100vh; 
-  margin-bottom: -100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin-bottom: -100px;
 }
 
 @media screen and (max-width: 600px) {
-  .div__cardFeed {
-    height: auto; 
-    margin-bottom: 0; 
-    padding: 20px; 
-  }
+	.div__cardFeed {
+		height: auto;
+		margin-bottom: 0;
+		padding: 20px;
+	}
 }
-  
+
 .card__feed {
-  display: flex;
-  flex-direction: column;
-  width: 450px; 
-  height: 600px; 
+	display: flex;
+	flex-direction: column;
+	width: 450px;
+	height: 600px;
 }
 
 @media screen and (max-width: 600px) {
-  .card__feed {
-    width: 100%;
-    height: auto; 
-  }
+	.card__feed {
+		width: 100%;
+		height: auto;
+	}
 }
 
 .feed__imagen {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  aspect-ratio: 3 / 4; 
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	aspect-ratio: 3 / 4;
 }
 
 .div__feed {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  gap: 12px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	gap: 12px;
 }
 
 .div__feed img {
-  width: 40px;
-  height: 40px;
-  object-fit: cover;
-  border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	object-fit: cover;
+	border-radius: 50%;
 }
 
 @media screen and (max-width: 600px) {
-  .div__feed img {
-    width: 30px; 
-    height: 30px; 
-  }
+	.div__feed img {
+		width: 30px;
+		height: 30px;
+	}
 }
 
 .tiempoPublicado {
-  color: darkgrey;
+	color: darkgrey;
 }
 
 .feed__reacciones {
-  display: flex;
-  justify-content: space-between;
-  margin-block: 10px;
-  font-size: 20px;
+	display: flex;
+	justify-content: space-between;
+	margin-block: 10px;
+	font-size: 20px;
 }
 
 .iconos__div {
-  display: flex;
-  gap: 8px;
+	display: flex;
+	gap: 8px;
 }
 
 .usuario__bold {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 .recuentos__meGusta {
-  display: flex;
-  gap: 5px;
-  margin-bottom: 5px;
+	display: flex;
+	gap: 5px;
+	margin-bottom: 5px;
 }

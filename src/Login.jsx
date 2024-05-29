@@ -1,14 +1,34 @@
-import App from "./App"
-import "./css/login.css";
+import { useState } from "react";
+import Registro from "./Registro";
+import LoginUsuario from "./LoginUsuario";
+import App from "./App";
 
-const Login = ({estaLogueado}) => {
-    if (estaLogueado){
-         return <App />
-    }
-    else{
-        return (<a href="" className="login"> Iniciar Sesión</a>)
-    }
- 
-}
+const Login = () => {
+	const [estaLogueado, setEstaLogueado] = useState(false);
+	const [estaRegistrado, setEstaRegistrado] = useState(true);
+    const [usuario, setUsuario] = useState("");
 
-export default Login
+	if (estaLogueado) {
+		return <App setEstaLogueado={setEstaLogueado} usuario={usuario}/>;
+	} else {
+		return (
+			<>
+				{estaRegistrado ? (
+					<LoginUsuario
+						setEstaRegistrado={setEstaRegistrado}
+						setEstaLogueado={setEstaLogueado}
+						setUsuario={setUsuario}
+					/>
+				) : (
+					<Registro
+						setEstaRegistrado={setEstaRegistrado}
+						setEstaLogueado={setEstaLogueado}
+						setUsuario={setUsuario}
+					/>
+				)}
+			</>
+		);
+	}
+};
+
+export default Login;

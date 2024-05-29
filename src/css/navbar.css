@@ -1,0 +1,13 @@
+.navbar{
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+   margin-block: 30px;
+}
+
+.navbar button {
+    color:dodgerblue;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
